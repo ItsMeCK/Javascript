@@ -2,14 +2,34 @@
 <html>
 <body>
 
-<h1>My First Web Page</h1>
-<p>My First Paragraph.</p>
+	<h1>My First Web Page</h1>
+	<p>My First Paragraph.</p>
 
-<p id="demo"></p>
+	<p id="demo"></p>
+	<button onclick="document.write(5 + 6)">Try it</button>
 
-<script>
-document.getElementById("demo").innerHTML = 5 + 6;
-</script>
+	<!-- it ecexutes in a sequence of appearance.-->
+	<!-- Replace perticular element by id-->
+	<script>
+		document.getElementById("demo").innerHTML = 5 + 6;
+	</script>
+
+	<!-- Writes to page-->
+	<script type="text/javascript">
+		document.write(5 + 6);
+	</script>
+
+	<script>
+		window.alert(5 + 0);
+	</script>
+	<script>
+		window.alert(5 + 6);
+	</script>
+
+	<script>
+		console.log(5 + 6);
+	</script>
+
 
 </body>
 </html> 
