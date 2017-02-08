@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>
+The global function (myFunction) returns the product of the arguments (a ,b):
+</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(a, b) {
+    return a * b;
+}
+document.getElementById("demo").innerHTML = myFunction(10, 2); 
+window.myFunction(10, 2);    // window.myFunction(10, 2) will also return 20
+
+
+// This is a function constructor:
+
+// This creates a new object
+var x = new myFunction("John", "Doe");
+x.firstName;   
+
+myObject = myFunction.call2(myObject, 10, 2);     // Will return 20
+
+</script>
+
+</body>
+</html>
+
+
